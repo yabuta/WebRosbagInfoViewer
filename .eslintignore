@@ -1,0 +1,10 @@
+# Directory
+node_modules/
+json-server/
+__test__/
+public/
+*.css
+*.scss
+
+# File
+src/utils/Converter/MGRSConverter.js
