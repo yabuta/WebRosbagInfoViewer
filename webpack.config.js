@@ -12,6 +12,7 @@ module.exports = webpackMerge(commonConfig, {
     filename: 'main.js'
   },
   devServer: {
+    open: true,
     openPage: 'test.html',
     contentBase: path.join(__dirname, 'public'),
     port: 3000,

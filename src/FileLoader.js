@@ -11,7 +11,7 @@ const FileLoader = props => {
     acceptedFiles => {
       console.log(acceptedFiles);
       bagDataProvider.initialize(acceptedFiles[0]).then(bagData => {
-        console.log(bagData);
+        console.log(bagData, bagData.getRosbagInfo());
       });
     },
     [bagDataProvider]
