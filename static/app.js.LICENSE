@@ -1,0 +1,261 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!*****************************************!*\
+        !*** ./node_modules/base64-js/index.js ***!
+        \*****************************************/
+
+/*! no static exports found */
+
+/*!************************************!*\
+        !*** ./node_modules/heap/index.js ***!
+        \************************************/
+
+/*! ./lib/heap */
+
+/*!***************************************!*\
+        !*** ./node_modules/heap/lib/heap.js ***!
+        \***************************************/
+
+/*!***************************************!*\
+        !*** ./node_modules/ieee754/index.js ***!
+        \***************************************/
+
+/*!*************************************!*\
+        !*** ./node_modules/int53/index.js ***!
+        \*************************************/
+
+/*!***************************************!*\
+        !*** ./node_modules/isarray/index.js ***!
+        \***************************************/
+
+/*!*********************************************************************!*\
+        !*** ./node_modules/node-libs-browser/node_modules/buffer/index.js ***!
+        \*********************************************************************/
+
+/*!
+          * The buffer module from node.js, for the browser.
+          *
+          * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+          * @license  MIT
+          */
+
+/*! base64-js */
+
+/*! ieee754 */
+
+/*! isarray */
+
+/*! ./../../../webpack/buildin/global.js */
+
+/*!*****************************************!*\
+        !*** ./node_modules/process/browser.js ***!
+        \*****************************************/
+
+/*!***************************************************!*\
+        !*** ./node_modules/setimmediate/setImmediate.js ***!
+        \***************************************************/
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./../process/browser.js */
+
+/*!************************************************!*\
+        !*** ./node_modules/timers-browserify/main.js ***!
+        \************************************************/
+
+/*! setimmediate */
+
+/*!***********************************!*\
+        !*** (webpack)/buildin/global.js ***!
+        \***********************************/
+
+/*!*************************************!*\
+        !*** ./src/BagConnectionsHelper.js ***!
+        \*************************************/
+
+/*! exports provided: bagConnectionsToDatatypes, bagConnectionsToTopics, bagConnectionsToMessageCount */
+
+/*! ./parseMessageDefinition */
+
+/*! ./record */
+
+/*!**************************!*\
+        !*** ./src/BagReader.js ***!
+        \**************************/
+
+/*! exports provided: default */
+
+/*! ./header */
+
+/*! ./nmerge */
+
+/*! ./TimeUtil */
+
+/*! ./../node_modules/timers-browserify/main.js */
+
+/*!******************************!*\
+        !*** ./src/MessageReader.js ***!
+        \******************************/
+
+/*! exports provided: MessageReader */
+
+/*! int53 */
+
+/*! ./fields */
+
+/*!***************************!*\
+        !*** ./src/ReadResult.js ***!
+        \***************************/
+
+/*!*************************!*\
+        !*** ./src/TimeUtil.js ***!
+        \*************************/
+
+/*! exports provided: fromDate, toDate, compare, isLessThan, isGreaterThan, areSame, add, sub */
+
+/*!********************!*\
+        !*** ./src/bag.js ***!
+        \********************/
+
+/*! ./BagReader */
+
+/*! ./MessageReader */
+
+/*! ./ReadResult */
+
+/*! ./BagConnectionsHelper */
+
+/*!***********************!*\
+        !*** ./src/fields.js ***!
+        \***********************/
+
+/*! exports provided: extractFields, extractTime */
+
+/*!***********************!*\
+        !*** ./src/header.js ***!
+        \***********************/
+
+/*! exports provided: parseHeader */
+
+/*!**********************!*\
+        !*** ./src/index.js ***!
+        \**********************/
+
+/*! ./bag */
+
+/*! ./types */
+
+/*!***********************!*\
+        !*** ./src/nmerge.js ***!
+        \***********************/
+
+/*! heap */
+
+/*!***************************************!*\
+        !*** ./src/parseMessageDefinition.js ***!
+        \***************************************/
+
+/*! exports provided: rosPrimitiveTypes, parseMessageDefinition */
+
+/*!***********************!*\
+        !*** ./src/record.js ***!
+        \***********************/
+
+/*! exports provided: Record, BagHeader, Chunk, Connection, MessageData, IndexData, ChunkInfo */
+
+/*!**********************!*\
+        !*** ./src/types.js ***!
+        \**********************/
+
+/*!**************************!*\
+        !*** ./src/web/index.js ***!
+        \**************************/
+
+/*! buffer */
+
+/*! ../index */
+
+/*! ../bag */
+
+/*! ../BagReader */
+
+/*! ../types */
+
+/*! ./../../node_modules/timers-browserify/main.js */
+
+/** @license React v16.10.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.10.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v0.16.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.10.2
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * A better abstraction over CSS.
+ *
+ * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
+ * @website https://github.com/cssinjs/jss
+ * @license MIT
+ */
+
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
