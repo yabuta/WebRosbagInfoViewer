@@ -5,13 +5,17 @@ import { useDropzone } from 'react-dropzone';
 
 import BagDataProvider from './DataProvider/BagDataProvider';
 
-const FileLoader = props => {
+import PreText from './component/PreText';
+import BagInfoTable from './component/BagInfoTable';
+
+const FileLoader = () => {
+  const [bagInfo, setBagInfo] = React.useState(null);
   const bagDataProvider = new BagDataProvider();
   const onDrop = useCallback(
     acceptedFiles => {
-      console.log(acceptedFiles);
       bagDataProvider.initialize(acceptedFiles[0]).then(bagData => {
         console.log(bagData, bagData.getRosbagInfo());
+        setBagInfo(bagData.getRosbagInfo());
       });
     },
     [bagDataProvider]
@@ -24,8 +28,11 @@ const FileLoader = props => {
       <div {...getRootProps()}>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <input {...getInputProps()} />
-        {isDragActive ? 'loading' : ''}
-        {props.children}
+        {bagInfo ? (
+          <BagInfoTable bagInfo={bagInfo} />
+        ) : (
+          <PreText isDragActive={isDragActive} />
+        )}
       </div>
     </div>
   );
