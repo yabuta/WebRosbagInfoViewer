@@ -1,45 +1,51 @@
-import React, { useCallback } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
-import { useDropzone } from 'react-dropzone';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 
 import BagDataProvider from './DataProvider/BagDataProvider';
 
-import PreText from './component/PreText';
 import BagInfoTable from './component/BagInfoTable';
 
+const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1)
+  },
+  input: {
+    display: 'none'
+  }
+}));
+
 const FileLoader = () => {
+  const classes = useStyles();
   const [bagInfo, setBagInfo] = React.useState(null);
   const bagDataProvider = new BagDataProvider();
-  const onDrop = useCallback(
-    acceptedFiles => {
-      bagDataProvider.initialize(acceptedFiles[0]).then(bagData => {
-        console.log(bagData, bagData.getRosbagInfo());
-        setBagInfo(bagData.getRosbagInfo());
-      });
-    },
-    [bagDataProvider]
-  );
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
-
+  const handleReadButton = event => {
+    console.log(event.target.files[0]);
+    bagDataProvider.initialize(event.target.files[0]).then(bagData => {
+      setBagInfo(bagData.getRosbagInfo());
+    });
+  };
+  /* eslint-disable jsx-a11y/label-has-associated-control */
   return (
     <div style={{ height: '100%', width: '100%' }}>
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <div {...getRootProps()}>
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        <input {...getInputProps()} />
-        {bagInfo ? (
-          <BagInfoTable bagInfo={bagInfo} />
-        ) : (
-          <PreText isDragActive={isDragActive} />
-        )}
-      </div>
+      <input
+        accept="*"
+        className={classes.input}
+        id="contained-button-file"
+        multiple
+        type="file"
+        onChange={handleReadButton}
+      />
+      <label htmlFor="contained-button-file">
+        <Button variant="contained" component="span" className={classes.button}>
+          Upload
+        </Button>
+      </label>
+      {bagInfo !== null ? <BagInfoTable bagInfo={bagInfo} /> : null}
     </div>
   );
-};
-
-FileLoader.propTypes = {
-  children: PropTypes.element.isRequired
+  /* eslint-disable jsx-a11y/label-has-associated-control */
 };
 
 export default FileLoader;
